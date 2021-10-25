@@ -165,14 +165,28 @@ services:
     restart: always
 
   nginx-web-server:
+    # image: yg397/openresty-thrift:xenial
     image: yg397/openresty-thrift:xenial
     hostname: nginx-thrift
+    ports:
+      - 8081:8080
+    restart: always
+    volumes:
+      - ./nginx-web-server/lua-scripts:/usr/local/openresty/nginx/lua-scripts
+      - ./nginx-web-server/conf/nginx.conf:/usr/local/openresty/nginx/conf/nginx.conf
+      - ./nginx-web-server/jaeger-config.json:/usr/local/openresty/nginx/jaeger-config.json
+      - ./gen-lua:/gen-lua
+
+  nginx-web-server-dynamic:
+    # image: yg397/openresty-thrift:xenial
+    image: d33a99dae19f
+    hostname: nginx-thrift-backup-1
     ports:
       - 8080:8080
     restart: always
     volumes:
       - ./nginx-web-server/lua-scripts:/usr/local/openresty/nginx/lua-scripts
-      - ./nginx-web-server/conf/nginx.conf:/usr/local/openresty/nginx/conf/nginx.conf
+      - ./nginx-web-server/new_docker/nginx.conf:/usr/local/openresty/nginx/conf/nginx.conf
       - ./nginx-web-server/jaeger-config.json:/usr/local/openresty/nginx/jaeger-config.json
       - ./gen-lua:/gen-lua
 
