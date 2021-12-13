@@ -37,7 +37,7 @@ clean:
 
 $(BIN): $(OBJ)
 	@echo LINK $(BIN)
-	@$(CC) $(LDFLAGS) -o $@ $^ $(LIBS)
+	@$(CC) -no-pie $(LDFLAGS) -o $@ $^ $(LIBS)
 
 $(OBJ): config.h Makefile $(LDIR)/libluajit.a | $(ODIR)
 

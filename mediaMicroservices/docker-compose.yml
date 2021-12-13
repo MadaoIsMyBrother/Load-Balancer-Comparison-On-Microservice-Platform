@@ -179,7 +179,7 @@ services:
 
   nginx-web-server-dynamic:
     # image: yg397/openresty-thrift:xenial
-    image: d33a99dae19f
+    image: 335698067cf6 
     hostname: nginx-thrift-backup-1
     ports:
       - 8080:8080
