@@ -1,0 +1,127 @@
+{
+  "secret": "secret",
+  "unique-id-service": {
+    "addr": "unique-id-service",
+    "port": 9090
+  },
+  "movie-id-service": {
+    "addr": "movie-id-service",
+    "port": 9090
+  },
+  "movie-id-mongodb": {
+    "addr": "172.22.154.17",
+    "port": 27118
+  },
+  "movie-id-memcached": {
+    "addr": "172.22.154.17",
+    "port": 11311
+  },
+  "user-mongodb": {
+    "addr": "172.22.154.17",
+    "port": 27119
+  },
+  "user-memcached": {
+    "addr": "172.22.154.17",
+    "port": 11213
+  },
+  "text-service": {
+    "addr": "text-service",
+    "port": 9090
+  },
+  "rating-service": {
+    "addr": "rating-service",
+    "port": 9090
+  },
+  "rating-redis": {
+    "addr": "rating-redis",
+    "port": 6379
+  },
+  "user-service": {
+    "addr": "user-service",
+    "port": 9090
+  },
+  "compose-review-service": {
+    "addr": "compose-review-service",
+    "port": 9090
+  },
+  "compose-review-memcached": {
+    "addr": "172.22.154.17",
+    "port": 11214
+  },
+  "review-storage-service": {
+    "addr": "review-storage-service",
+    "port": 9090
+  },
+  "review-storage-mongodb": {
+    "addr": "172.22.154.17",
+    "port": 27120
+  },
+  "review-storage-memcached": {
+    "addr": "172.22.154.17",
+    "port": 11215
+  },
+  "user-review-service": {
+    "addr": "user-review-service",
+    "port": 9090
+  },
+  "user-review-mongodb": {
+    "addr": "172.22.154.17",
+    "port": 27121
+  },
+  "user-review-redis": {
+    "addr": "user-review-redis",
+    "port": 6379
+  },
+  "movie-review-service": {
+    "addr": "movie-review-service",
+    "port": 9090
+  },
+  "movie-review-mongodb": {
+    "addr": "172.22.154.17",
+    "port": 27122
+  },
+  "movie-review-redis": {
+    "addr": "movie-review-redis",
+    "port": 6379
+  },
+  "cast-info-service": {
+    "addr": "cast-info-service",
+    "port": 9090
+  },
+  "cast-info-mongodb": {
+    "addr": "172.22.154.17",
+    "port": 27124
+  },
+  "cast-info-memcached": {
+    "addr": "172.22.154.17",
+    "port": 11219
+  },
+  "plot-service": {
+    "addr": "plot-service",
+    "port": 9090
+  },
+  "plot-mongodb": {
+    "addr": "172.22.154.17",
+    "port": 27125
+  },
+  "plot-memcached": {
+    "addr": "172.22.154.17",
+    "port": 11220
+  },
+  "movie-info-service": {
+    "addr": "movie-info-service",
+    "port": 9090
+  },
+  "movie-info-mongodb": {
+    "addr": "172.22.154.17",
+    "port": 27126
+  },
+  "movie-info-memcached": {
+    "addr": "172.22.154.17",
+    "port": 11321
+  },
+  "page-service": {
+    "addr": "page-service",
+    "port": 9090
+  }
+}
